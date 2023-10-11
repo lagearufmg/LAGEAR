@@ -1,0 +1,85 @@
+# Projeto de Sensor de Distância a Laser com ESP32 e VL53L0X
+
+Este projeto é um sensor de distância a laser que utiliza o sensor VL53L0X e um ESP32 para medir distâncias e publicar os dados em um servidor MQTT para análise e visualização. Ele pode ser usado em várias aplicações relacionadas à automação residencial e controle de dispositivos.
+
+## Hardware Necessário
+
+- ESP32 (ou outro microcontrolador compatível)
+- Sensor de distância a laser VL53L0X
+- Acesso à rede Wi-Fi
+- Acesso a um servidor MQTT
+
+## Conexões do Sensor VL53L0X
+
+O sensor VL53L0X se comunica usando o protocolo I2C. Você pode escolher quais pinos SDA (Serial Data) e SCL (Serial Clock) do ESP32 deseja usar para conectar o sensor. Certifique-se de que as conexões estejam firmes e de que os pinos escolhidos correspondam às configurações no seu código.
+
+## Configuração Wi-Fi
+
+Neste projeto, utilizamos o WiFiManager para configurar o ESP32 para se conectar à sua rede Wi-Fi. O WiFiManager cria uma rede Wi-Fi de configuração para permitir que você insira as informações da sua rede Wi-Fi. Siga estas etapas para configurar o Wi-Fi:
+
+1. Carregue o código no seu ESP32 usando a Arduino IDE ou outra plataforma de desenvolvimento.
+
+2. Aguarde a inicialização e abra a Serial Monitor.
+
+3. Quando o dispositivo não conseguir se conectar à sua rede Wi-Fi configurada anteriormente, ele entrará no modo de configuração.
+
+4. Conecte-se à rede Wi-Fi do dispositivo, que deve aparecer com o nome "AutoConnectAP".
+
+5. Abra um navegador da web e acesse o endereço IP `192.168.4.1`.
+
+6. Você será redirecionado para uma página de configuração onde poderá inserir as informações da sua rede Wi-Fi, como o SSID e a senha.
+
+7. Após a configuração, o dispositivo tentará se conectar à sua rede Wi-Fi usando as novas informações.
+
+## Configuração MQTT
+
+Para publicar e receber dados dos sensores, este projeto utiliza o protocolo MQTT. Para configurar o MQTT, siga estas etapas:
+
+1. Abra o código fonte do projeto no Arduino IDE ou em sua plataforma de desenvolvimento preferida.
+
+2. Encontre as seguintes linhas no código:
+
+   ```cpp
+   const char* mqtt_server = "seu-broker-mqtt";
+   const int mqtt_port = 1883;
+   const char* mqtt_topic_videospeed = "sensor/laser_distance/video_speed";
+   const char* mqtt_topic_distance = "sensor/laser_distance/video_distance";
+   const char* mqtt_topic_speed = "sensor/laser_distance/speed";
+
+3. Edite as informações a seguir para corresponder à sua configuração MQTT:
+
+  mqtt_server: Insira o endereço IP ou o nome de domínio do seu servidor MQTT.
+  mqtt_port: Insira a porta do servidor MQTT (o valor padrão é 1883).
+  mqtt_topic_videospeed, mqtt_topic_distance, mqtt_topic_speed: Personalize os tópicos MQTT de acordo com suas preferências.
+  Salve o código após as edições.
+
+4. Carregue o código no seu ESP32 utilizando a Arduino IDE ou a plataforma de desenvolvimento de sua escolha.
+   Agora, o ESP32 está configurado para se conectar ao seu servidor MQTT e publicar dados nos tópicos MQTT especificados.
+
+5. Certifique-se de que seu servidor MQTT esteja configurado corretamente e que os tópicos MQTT definidos no código estejam corretos. Você pode usar um cliente MQTT, como o MQTT Explorer, para monitorar os tópicos e receber os dados dos sensores.
+
+6. Lembre-se de que a segurança do servidor MQTT (autenticação e autorização) é importante para proteger suas comunicações. A configuração específica pode variar dependendo do seu ambiente MQTT.
+
+##Uso
+**Controle de Velocidade de Vídeo no Max MSP** 
+Este projeto foi originalmente desenvolvido para controlar a velocidade de um vídeo no software Max MSP usando a variável videospeed. Você pode integrar o ESP32 com Max MSP para ajustar a velocidade de reprodução de vídeos com base na distância medida pelo sensor VL53L0X. Isso é útil para criar instalações de arte interativas, por exemplo.
+
+**Automação Residencial**
+Além do controle de velocidade de vídeo, este sensor de distância a laser pode ser utilizado em várias aplicações de automação residencial:
+
+Controle de iluminação: Ajuste a intensidade da luz com base na presença ou distância das pessoas.
+Segurança residencial: Detecte a presença de intrusos ou movimento não autorizado.
+Economia de energia: Desligue automaticamente dispositivos quando ninguém estiver na sala.
+Monitoramento de portas e janelas: Saiba quando portas ou janelas são abertas ou fechadas.
+Controle de cortinas: Abra ou feche cortinas com base na intensidade da luz externa.
+As possibilidades são amplas, e você pode personalizar o uso deste sensor de acordo com suas necessidades de automação residencial.
+
+Contribuição
+Sinta-se à vontade para contribuir para o projeto, reportar problemas ou melhorar o código.
+
+Licença
+Este projeto é licenciado sob a Licença MIT, o que significa que você pode usá-lo livremente e modificar de acordo com suas necessidades.
+
+Autores
+Emídio Souza
+Agradecimentos especiais à Casa Flusser e a Robson Gregório por sua contribuição no desenvolvimento do projeto.
