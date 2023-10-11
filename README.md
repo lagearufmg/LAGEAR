@@ -33,6 +33,3 @@ Para obter mais informações sobre o LAGEAR, entre em contato conosco em [lagea
 
 Obrigado por explorar os projetos do LAGEAR!
 
----
-
-[Adicione aqui qualquer informação adicional que você julgue necessária ou relevante para a organização dos projetos no LAGEAR.]
