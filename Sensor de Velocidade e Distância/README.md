@@ -59,6 +59,7 @@ Para publicar e receber dados dos sensores, este projeto utiliza o protocolo MQT
 ## Uso
 
 **Controle de Velocidade de Vídeo no Max MSP**
+
 Este projeto foi originalmente desenvolvido para controlar a velocidade de um vídeo no software Max MSP usando a variável videospeed. Você pode integrar o ESP32 com Max MSP para ajustar a velocidade de reprodução de vídeos com base na distância medida pelo sensor VL53L0X. Isso é útil para criar instalações de arte interativas, por exemplo.
 O dispositivo coletará dados da distância e velocidade do sensor VL53L0X e publicará esses dados em tópicos MQTT. O tópico MQTT para a velocidade é "sensor/laser_distance/video_speed" e o tópico para a distância é "sensor/laser_distance/video_distance".
 
