@@ -40,7 +40,7 @@ DeviceAddress sensorAddress = {0xB0, 0x51, 0xFC, 0x3F, 0x94, 0x1C, 0xFC, 0x3F};
 WiFiManager wifiManager; // Instanciar o WiFiManager
 
 // MQTT
-const char *mqttServer = "150.164.106.100";
+const char *mqttServer = "XXX.XXX.XXX.XXX"; // inclua usuário e senha se necessário, conforme a biblioteca PubSubClient.h
 const int mqttPort = 1883;
 const char *temperatureTopic = "sensor/temperatura/horta";
 const char *soilMoistureTopic = "sensor/umidade_solo/horta";
