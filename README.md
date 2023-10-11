@@ -10,7 +10,7 @@ Aqui está uma lista de alguns dos projetos disponíveis no LAGEAR:
 
 1. [Projeto de Monitoramento de Horta](https://github.com/emidiosouza/LAGEAR_UFMG/tree/main/Horta): Um sistema de monitoramento de horta que utiliza sensores para coletar dados de temperatura, umidade do solo, luminosidade e umidade ambiente.
 
-2. [Nome do Projeto 2](link-para-o-projeto-2): Breve descrição do Projeto 2.
+2. [Projeto de Monitoramento de Distância a Laser](https://github.com/emidiosouza/LAGEAR_UFMG/tree/main/Sensor%20de%20Velocidade%20e%20Dist%C3%A2ncia): O projeto é um sistema de monitoramento baseado em sensor de distância a laser VL53L0X que possibilita rastrear velocidade e distância de objetos em movimento, com aplicações desde o controle de velocidade de vídeos até automações residenciais ligadas à natureza.
 
 3. [Nome do Projeto 3](link-para-o-projeto-3): Breve descrição do Projeto 3.
 
