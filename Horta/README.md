@@ -86,18 +86,18 @@ Para publicar e receber dados dos sensores, este projeto utiliza o protocolo MQT
 
 **Edite as informações a seguir para corresponder à sua configuração MQTT:**
 
-mqttServer: Insira o endereço IP ou o nome de domínio do seu servidor MQTT.
-mqttPort: Insira a porta do servidor MQTT (o valor padrão é 1883).
-temperatureTopic, soilMoistureTopic, soilTemperatureTopic, humidityTopic, lightTopic: Personalize os tópicos MQTT de acordo com suas preferências.
-Salve o código após as edições.
+3. mqttServer: Insira o endereço IP ou o nome de domínio do seu servidor MQTT.
+   mqttPort: Insira a porta do servidor MQTT (o valor padrão é 1883).
+   temperatureTopic, soilMoistureTopic, soilTemperatureTopic, humidityTopic, lightTopic: Personalize os tópicos MQTT de acordo com suas preferências.
+   Salve o código após as edições.
 
-3. Carregue o código no seu ESP32 utilizando a Arduino IDE ou a plataforma de desenvolvimento de sua escolha.
+4. Carregue o código no seu ESP32 utilizando a Arduino IDE ou a plataforma de desenvolvimento de sua escolha.
 
-4. Agora, o ESP32 está configurado para se conectar ao seu servidor MQTT e publicar dados nos tópicos MQTT especificados.
+5. Agora, o ESP32 está configurado para se conectar ao seu servidor MQTT e publicar dados nos tópicos MQTT especificados.
 
-5. Certifique-se de que seu servidor MQTT esteja configurado corretamente e que os tópicos MQTT definidos no código estejam corretos. Você pode usar um cliente MQTT, como o MQTT Explorer, para monitorar os tópicos e receber os dados dos sensores.
+6. Certifique-se de que seu servidor MQTT esteja configurado corretamente e que os tópicos MQTT definidos no código estejam corretos. Você pode usar um cliente MQTT, como o MQTT Explorer, para monitorar os tópicos e receber os dados dos sensores.
 
-6. Lembre-se de que a segurança do servidor MQTT (autenticação e autorização) é importante para proteger suas comunicações. A configuração específica pode variar dependendo do seu ambiente MQTT.
+7. Lembre-se de que a segurança do servidor MQTT (autenticação e autorização) é importante para proteger suas comunicações. A configuração específica pode variar dependendo do seu ambiente MQTT.
 
 
 ## Uso
