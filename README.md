@@ -4,7 +4,7 @@ Este projeto é um sistema de monitoramento de uma horta que utiliza sensores pa
 
 ## Hardware Necessário
 
-- ESP32 (ou outro microcontrolador compatível)
+- ESP32 WEMOS LoLin Lite
 - Sensores de temperatura (DS18B20), umidade (DHT11), umidade do solo e luminosidade (BH1750)
 - Acesso à rede Wi-Fi
 - Acesso a um servidor MQTT
