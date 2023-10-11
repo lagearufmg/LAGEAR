@@ -20,6 +20,14 @@ Siga estas instruções para conectar os sensores ao ESP32:
    - Conecte a alimentação do sensor de umidade do solo (normalmente 3,3V) a um pino de 3,3V no ESP32.
    - Conecte o terra (GND) do sensor de umidade do solo a um pino GND no ESP32.
 
+   **Calibração do Sensor de Umidade do Solo:**
+
+   O sensor de umidade do solo pode requerer calibração para fornecer leituras precisas. Para calibrar o sensor, siga estas etapas:
+
+   a. Deixe o sensor no solo por um período de tempo para estabilizar as leituras.
+   b. Meça a umidade do solo em um estado conhecido (por exemplo, solo seco e solo úmido) e anote as leituras.
+   c. Use esses valores para calibrar as leituras do sensor no código.
+
 2. **Sensor de Temperatura DS18B20:**
 
    - Conecte o pino de dados (geralmente amarelo) do sensor DS18B20 ao pino `pinDS18B20` (Pino 4 no exemplo) no ESP32.
@@ -54,6 +62,29 @@ Para configurar o ESP32 para se conectar à sua rede Wi-Fi, siga as instruções
 6. Você será redirecionado para uma página de configuração onde poderá inserir as informações da sua rede Wi-Fi, como o SSID e a senha.
 7. Após a configuração, o dispositivo tentará se conectar à sua rede Wi-Fi usando as novas informações.
 
+## Configuração MQTT
+
+Para publicar e receber dados dos sensores, este projeto utiliza o protocolo MQTT. Para configurar o MQTT, siga estas etapas:
+
+1. Abra o código fonte `MonitoramentoHorta_ESP32.ino` no Arduino IDE ou em sua plataforma de desenvolvimento preferida.
+
+2. Encontre as seguintes linhas no código:
+
+   ```cpp
+   // WiFi
+   const char *ssid = "sua-rede";
+   const char *password = "sua-senha";
+
+   // MQTT
+   const char *mqttServer = "seu-broker-mqtt"; //inclua usuário e senha se necessário, conforma a biblioteca PubSubClient.h
+   const int mqttPort = 1883;
+   const char *temperatureTopic = "sensor/temperatura/horta";
+   const char *soilMoistureTopic = "sensor/umidade_solo/horta";
+   const char *soilTemperatureTopic = "sensor/temperatura_solo/horta";
+   const char *humidityTopic = "sensor/umidade/horta";
+   const char *lightTopic = "sensor/luminosidade/horta"; // Tópico para luminosidade
+
+
 ## Uso
 
 O dispositivo coletará dados dos sensores e publicará esses dados em tópicos MQTT. Você pode se inscrever nos tópicos MQTT para receber os dados ou usar uma ferramenta MQTT de visualização para monitorar as leituras.
@@ -70,5 +101,3 @@ Este projeto é licenciado sob a [Licença MIT](LICENSE), o que significa que vo
 
 - Emídio Souza
 - Agradecimentos especiais à Casa Flusser e a Robson Gregório por sua contribuição no desenvolvimento do projeto.
-
-
