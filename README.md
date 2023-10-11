@@ -70,6 +70,4 @@ Este projeto é licenciado sob a [Licença MIT](LICENSE), o que significa que vo
 - Emídio Souza
 - Agradecimentos especiais à Casa Flusser e a Robson Gregório por sua contribuição no desenvolvimento do projeto.
 
----
 
-[Adicione aqui qualquer informação adicional que você julgue necessária ou relevante para o seu projeto.]
