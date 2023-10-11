@@ -71,10 +71,6 @@ Para publicar e receber dados dos sensores, este projeto utiliza o protocolo MQT
 2. Encontre as seguintes linhas no código:
 
    ```cpp
-   // WiFi
-   const char *ssid = "sua-rede";
-   const char *password = "sua-senha";
-
    // MQTT
    const char *mqttServer = "seu-broker-mqtt"; //inclua usuário e senha se necessário, conforma a biblioteca PubSubClient.h
    const int mqttPort = 1883;
