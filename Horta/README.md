@@ -84,9 +84,9 @@ Para publicar e receber dados dos sensores, este projeto utiliza o protocolo MQT
    const char *humidityTopic = "sensor/umidade/horta";
    const char *lightTopic = "sensor/luminosidade/horta"; // Tópico para luminosidade
 
-**Edite as informações a seguir para corresponder à sua configuração MQTT:**
+3. Edite as informações a seguir para corresponder à sua configuração MQTT:
 
-3. mqttServer: Insira o endereço IP ou o nome de domínio do seu servidor MQTT.
+   mqttServer: Insira o endereço IP ou o nome de domínio do seu servidor MQTT.
    mqttPort: Insira a porta do servidor MQTT (o valor padrão é 1883).
    temperatureTopic, soilMoistureTopic, soilTemperatureTopic, humidityTopic, lightTopic: Personalize os tópicos MQTT de acordo com suas preferências.
    Salve o código após as edições.
