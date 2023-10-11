@@ -33,13 +33,13 @@ Para publicar e receber dados dos sensores, este projeto utiliza o protocolo MQT
 
 2. Encontre as seguintes linhas no código:
 
- ```cpp
-// Configuração MQTT
-const char* mqtt_server = "seu-broker-mqtt";
-const int mqtt_port = 1883;
-const char* mqtt_topic_videospeed = "sensor/laser_distance/video_speed"; // Tópico de velocidade
-const char* mqtt_topic_distance = "sensor/laser_distance/video_distance"; // Tópico de distância
-const char* mqtt_topic_speed = "sensor/laser_distance/speed"; // Terceiro tópico
+    ```cpp
+   // Configuração MQTT
+   const char* mqtt_server = "seu-broker-mqtt";
+   const int mqtt_port = 1883;
+   const char* mqtt_topic_videospeed = "sensor/laser_distance/video_speed"; // Tópico de velocidade
+   const char* mqtt_topic_distance = "sensor/laser_distance/video_distance"; // Tópico de distância
+   const char* mqtt_topic_speed = "sensor/laser_distance/speed"; // Terceiro tópico
 
 3. Edite as informações a seguir para corresponder à sua configuração MQTT:
 
