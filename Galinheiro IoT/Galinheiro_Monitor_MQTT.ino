@@ -3,7 +3,7 @@
 #include <WiFiManager.h>
 
 // Variáveis globais para armazenar as configurações de rede Wi-Fi e MQTT
-char mqtt_server[40] = "150.164.106.100"; // Endereço IP ou nome de domínio do servidor MQTT
+char mqtt_server[40] = "XXX.XXX.XXX.XXX"; // Endereço IP ou nome de domínio do servidor MQTT
 int mqtt_port = 1883; // Porta MQTT padrão
 char mqtt_topic[40] = "sensor/poleiro_galinhas"; // Tópico MQTT
 
