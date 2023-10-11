@@ -9,7 +9,7 @@ O código consiste em um loop principal que verifica o estado de um botão conec
 ## Componentes Necessários
 
 - Dispositivo ESP32
-- Botão conectado ao pino 2 (ou outro pino de sua escolha)
+- Botão de contato caseiro feito de papel alumínio e espuma, conectado ao pino 2 (ou outro pino de sua escolha)
 - Servidor MQTT (endereço IP ou nome de domínio) para publicação dos dados
 - Acesso à rede Wi-Fi
 
@@ -50,3 +50,16 @@ Antes de usar o código, é necessário configurar as informações de conexão 
 - O código publica mensagens MQTT a cada segundo. Você pode ajustar o intervalo de publicação conforme necessário.
 
 Aproveite o uso deste código para monitorar o status das galinhas em seu galinheiro ou adapte-o para atender a outras necessidades de monitoramento por MQTT.
+
+## Contribuição
+
+Sinta-se à vontade para contribuir para o projeto, reportar problemas ou melhorar o código.
+
+## Licença
+
+Este projeto é licenciado sob a [Licença MIT](LICENSE), o que significa que você pode usá-lo livremente e modificar de acordo com suas necessidades.
+
+## Autores
+
+- Emídio Souza
+- Agradecimentos especiais à Casa Flusser e a Robson Gregório por sua contribuição no desenvolvimento do projeto.
