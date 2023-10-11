@@ -29,7 +29,7 @@ Os projetos individuais podem ter diferentes licenças, portanto, verifique a li
 
 ## Contato
 
-Para obter mais informações sobre o LAGEAR, entre em contato conosco em [seu-email@lagear.ufmg.br](mailto:seu-email@lagear.ufmg.br).
+Para obter mais informações sobre o LAGEAR, entre em contato conosco em [lagear.ufmg@gmail.com](mailto:lagear.ufmg@gmail.com).
 
 Obrigado por explorar os projetos do LAGEAR!
 
