@@ -8,6 +8,7 @@ Este projeto é um sistema de monitoramento de uma horta que utiliza sensores pa
 - Sensores de temperatura (DS18B20), umidade (DHT11), umidade do solo e luminosidade (BH1750)
 - Acesso à rede Wi-Fi
 - Acesso a um servidor MQTT
+- Código MonitoramentoHorta_ESP32.ino (disponível nesse repositório)
 
 ## Conexões dos Sensores
 
