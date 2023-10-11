@@ -12,7 +12,7 @@ Aqui está uma lista de alguns dos projetos disponíveis no LAGEAR:
 
 2. [Projeto de Monitoramento de Distância a Laser](https://github.com/emidiosouza/LAGEAR_UFMG/tree/main/Sensor%20de%20Velocidade%20e%20Dist%C3%A2ncia): O projeto é um sistema de monitoramento baseado em sensor de distância a laser VL53L0X que possibilita rastrear velocidade e distância de objetos em movimento, com aplicações desde o controle de velocidade de vídeos até automações residenciais ligadas à natureza.
 
-3. [Nome do Projeto 3](link-para-o-projeto-3): Breve descrição do Projeto 3.
+3. [Galinheiro IoT](https://github.com/emidiosouza/LAGEAR_UFMG/tree/main/Galinheiro%20IoT): Este repositório contém o código-fonte Arduino para monitorar o status das galinhas em um poleiro usando MQTT.
 
 ## Como Navegar nos Projetos
 
