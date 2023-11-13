@@ -9,8 +9,8 @@ int previousDistance = 0;
 
 // WiFi e configurações MQTT
 WiFiManager wifiManager;
-const char* mqtt_server = "150.164.106.100";
-const int mqtt_port = 1883;
+const char* mqtt_server = "000.000.000.000";
+const int mqtt_port = 0000;
 const char* mqtt_topic_videospeed = "sensor/laser_distance/video_speed"; // Tópico de velocidade
 const char* mqtt_topic_distance = "sensor/laser_distance/video_distance"; // Tópico de distância
 const char* mqtt_topic_speed = "sensor/laser_distance/speed"; // Terceiro tópico
